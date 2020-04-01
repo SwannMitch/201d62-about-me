@@ -1,4 +1,4 @@
-h1, h2, p {
+h1, h2, span, p {
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
@@ -21,3 +21,12 @@ header {
 main {
   text-align: center;
 }
+
+#lists {
+  text-align: center;
+  margin: 30px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+

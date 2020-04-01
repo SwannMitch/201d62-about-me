@@ -63,9 +63,18 @@ function aboutMe() {
   alert('WRONG!');
   }
 
+  // Create a 6th question that ask the user to guess a number.
+  // include too low or too high alerts
+  // 4 chances
+
+  // Create a 7th question that has multiple correct answers
+  // 6 chances
+  // prompt will end when guessed correctly or run out of out chances
 
 }
 
 function goodbye() {
   document.write('Good bye ' + userName + '! We hope to see you again!')
 }
+
+// make a counter to keep track correctly guessed answers
