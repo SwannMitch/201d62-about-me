@@ -67,6 +67,23 @@ function aboutMe() {
   // include too low or too high alerts
   // 4 chances
 
+  var questionSix;
+  questionSix = prompt('Guess my favorite number between 1 and 50');
+  console.log('my favorite number: ' + questionSix);
+  while (questionSix >'21') {
+    alert('Too high!');
+    questionSix = prompt('Guess my favorite number between 1 and 50');
+  }
+  while (questionSix < '21') {
+    alert('Too low!')
+  }
+  if (questionSix === '21') {
+    alert('Correct!')
+  }
+
+  
+
+
   // Create a 7th question that has multiple correct answers
   // 6 chances
   // prompt will end when guessed correctly or run out of out chances
