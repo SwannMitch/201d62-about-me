@@ -44,7 +44,7 @@ function aboutMe() {
   var questionFour;
   questionFour = prompt('Do I ragequit in video games?', 'Yes or No').toLowerCase();
   console.log('Do I ragequit in video games?: ' + questionFour);
-  if (questionFour == 'no' || 'not really' || 'sometimes' || 'a little') {
+  if (questionFour == 'no') {
   // console.log('Correct!');
   alert('Correct!');
   } else {
@@ -53,9 +53,9 @@ function aboutMe() {
   }
 
   var questionFive;
-  questionFive = prompt('Is my daughter skinny?', 'Yes or No').toLowerCase();
-  console.log('Is my daughter skinny?: ' + questionFive);
-  if (questionFive == 'no') {
+  questionFive = prompt('Is my daughter chunky?', 'Yes or No').toLowerCase();
+  console.log('Is my daughter chunky?: ' + questionFive);
+  if (questionFive == 'yes') {
   // console.log('Correct!');
   alert('Correct!');
   } else {
