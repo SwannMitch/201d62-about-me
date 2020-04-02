@@ -113,27 +113,32 @@ function number(){
     count++;
   } while (count < 4);
 }  
+
+
+function favColor(){
+  do {
+    var questionSeven = ['black', 'cerulean', 'crimson', 'mauve', 'teal']
+    var colors = prompt('Guess my favorite color.').toLowerCase();
+    if (questionSeven[0] === colors || questionSeven[1] === colors || questionSeven[2] === colors || questionSeven[3] === colors || questionSeven[4] === colors) {
+      alert('Correct!');
+      totalCorrectQuestions++;
+      break;
+    } else if (!colors) {
+      alert('Please input a color');
+    } else {
+      alert('Sorry, that\'s not my favorite color.');
+    } 
+    count++;
+  } while (count < 6);
+}
 short();
 hair();
 artist();
 rageQuit();
 chunky();
 number();
-//   do {
-//     var questionSeven = ['black', 'cerulean', 'crimson', 'mauve', 'teal']
-//     var colors = prompt('Guess my favorite color.').toLowerCase();
-//     if (questionSeven[0] === colors || questionSeven[1] === colors || questionSeven[2] === colors || questionSeven[3] === colors || questionSeven[4] === colors) {
-//       alert('Correct!');
-//       totalCorrectQuestions++;
-//       break;
-//     } else if (!colors) {
-//       alert('Please input a color');
-//     } else {
-//       alert('Sorry, that\'s not my favorite color.');
-//     } 
-//     count++;
-//   } while (count < 6);
-  
+favColor();
+
 //   alert('My favorite colors are ' + questionSeven + '.')
 //   alert(totalCorrectQuestions + ' out of ' + totalQuestions)
 
