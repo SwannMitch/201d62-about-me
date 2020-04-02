@@ -30,8 +30,9 @@ function short(){
   alert('WRONG!');
   }
 }
-short();
 
+
+function hair(){
   var questionTwo;
   questionTwo = prompt('Is my hair straight?', 'Yes or No').toLowerCase();
   console.log('Is my hair straight?: ' + questionTwo);
@@ -43,7 +44,9 @@ short();
   // console.log('WRONG!')
   alert('WRONG!');
   }
-
+}
+short();
+hair();
 //   var questionThree;
 //   questionThree = prompt('Is my favorite rap artist Nas?', 'Yes or No').toLowerCase();
 //   console.log('Is my favorite rap artist Nas?: ' + questionThree);
