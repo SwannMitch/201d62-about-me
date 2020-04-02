@@ -45,19 +45,24 @@ function hair(){
   alert('WRONG!');
   }
 }
+
+
+function artist(){
+  var questionThree;
+  questionThree = prompt('Is my favorite rap artist Nas?', 'Yes or No').toLowerCase();
+  console.log('Is my favorite rap artist Nas?: ' + questionThree);
+  if (questionThree == 'yes') {
+  // console.log('Correct!');
+  alert('Correct!');
+  totalCorrectQuestions++;
+  } else {
+  // console.log('WRONG!')
+  alert('WRONG!');
+  }
+}
 short();
 hair();
-//   var questionThree;
-//   questionThree = prompt('Is my favorite rap artist Nas?', 'Yes or No').toLowerCase();
-//   console.log('Is my favorite rap artist Nas?: ' + questionThree);
-//   if (questionThree == 'yes') {
-//   // console.log('Correct!');
-//   alert('Correct!');
-//   totalCorrectQuestions++;
-//   } else {
-//   // console.log('WRONG!')
-//   alert('WRONG!');
-//   }
+artist();
 
 //   var questionFour;
 //   questionFour = prompt('Do I ragequit in video games?', 'Yes or No').toLowerCase();
