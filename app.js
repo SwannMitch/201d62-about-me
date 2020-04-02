@@ -130,6 +130,7 @@ function favColor(){
     } 
     count++;
   } while (count < 6);
+  alert('My favorite colors are ' + questionSeven + '.')
 }
 short();
 hair();
@@ -139,8 +140,8 @@ chunky();
 number();
 favColor();
 
-//   alert('My favorite colors are ' + questionSeven + '.')
-//   alert(totalCorrectQuestions + ' out of ' + totalQuestions)
+
+alert(totalCorrectQuestions + ' out of ' + totalQuestions)
 
 
 
