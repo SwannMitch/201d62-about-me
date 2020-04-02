@@ -75,23 +75,29 @@ function rageQuit(){
   alert('WRONG!');
   }
 }
+
+
+function chunky(){
+  var questionFive;
+  questionFive = prompt('Is my daughter chunky?', 'Yes or No').toLowerCase();
+  console.log('Is my daughter chunky?: ' + questionFive);
+  if (questionFive == 'yes') {
+  // console.log('Correct!');
+  alert('Correct!');
+  totalCorrectQuestions++;
+  } else {
+  // console.log('WRONG!')
+  alert('WRONG!');
+  }
+}
 short();
 hair();
 artist();
 rageQuit();
+chunky();
 
 
-//   var questionFive;
-//   questionFive = prompt('Is my daughter chunky?', 'Yes or No').toLowerCase();
-//   console.log('Is my daughter chunky?: ' + questionFive);
-//   if (questionFive == 'yes') {
-//   // console.log('Correct!');
-//   alert('Correct!');
-//   totalCorrectQuestions++;
-//   } else {
-//   // console.log('WRONG!')
-//   alert('WRONG!');
-//   }
+
 
 //   // Create a 6th question that ask the user to guess a number.
 //   // include too low or too high alerts
