@@ -7,11 +7,17 @@
  
 // Create about me guessing game using yes/no prompts and if/else statements
 
-function aboutMe() {
+//delete about me function
+//create multiple smaller functions
+//wrap variables into the functions
+//call functions at the end 
+
+
   var totalCorrectQuestions = 0;
   var totalQuestions = 7;
   var count = 0;
 
+function short(){
   var questionOne;
   questionOne = prompt('Am I short?', 'Yes or No').toLowerCase();
   console.log('Am I short?: ' + questionOne);
@@ -23,7 +29,10 @@ function aboutMe() {
   // console.log('WRONG!')
   alert('WRONG!');
   }
+}
 
+
+function hair(){
   var questionTwo;
   questionTwo = prompt('Is my hair straight?', 'Yes or No').toLowerCase();
   console.log('Is my hair straight?: ' + questionTwo);
@@ -35,7 +44,10 @@ function aboutMe() {
   // console.log('WRONG!')
   alert('WRONG!');
   }
+}
 
+
+function artist(){
   var questionThree;
   questionThree = prompt('Is my favorite rap artist Nas?', 'Yes or No').toLowerCase();
   console.log('Is my favorite rap artist Nas?: ' + questionThree);
@@ -47,7 +59,10 @@ function aboutMe() {
   // console.log('WRONG!')
   alert('WRONG!');
   }
+}
 
+
+function rageQuit(){
   var questionFour;
   questionFour = prompt('Do I ragequit in video games?', 'Yes or No').toLowerCase();
   console.log('Do I ragequit in video games?: ' + questionFour);
@@ -59,7 +74,10 @@ function aboutMe() {
   // console.log('WRONG!')
   alert('WRONG!');
   }
+}
 
+
+function chunky(){
   var questionFive;
   questionFive = prompt('Is my daughter chunky?', 'Yes or No').toLowerCase();
   console.log('Is my daughter chunky?: ' + questionFive);
@@ -71,11 +89,14 @@ function aboutMe() {
   // console.log('WRONG!')
   alert('WRONG!');
   }
+}
 
-  // Create a 6th question that ask the user to guess a number.
-  // include too low or too high alerts
-  // 4 chances
+//   // Create a 6th question that ask the user to guess a number.
+//   // include too low or too high alerts
+//   // 4 chances
 
+
+function number(){
   do {
     var questionSix;
     questionSix = prompt('Guess my favorite number between 1 and 50');
@@ -91,7 +112,10 @@ function aboutMe() {
     } 
     count++;
   } while (count < 4);
+}  
 
+
+function favColor(){
   do {
     var questionSeven = ['black', 'cerulean', 'crimson', 'mauve', 'teal']
     var colors = prompt('Guess my favorite color.').toLowerCase();
@@ -106,20 +130,29 @@ function aboutMe() {
     } 
     count++;
   } while (count < 6);
-  
   alert('My favorite colors are ' + questionSeven + '.')
-  alert(totalCorrectQuestions + ' out of ' + totalQuestions)
 }
+short();
+hair();
+artist();
+rageQuit();
+chunky();
+number();
+favColor();
+
+
+alert(totalCorrectQuestions + ' out of ' + totalQuestions)
 
 
 
-  // Create a 7th question that has multiple correct answers
-  // 6 chances
-  // prompt will end when guessed correctly or run out of out chances
+
+//   // Create a 7th question that has multiple correct answers
+//   // 6 chances
+//   // prompt will end when guessed correctly or run out of out chances
 
 
-function goodbye() {
-  document.write('Good bye ' + userName + '! We hope to see you again!')
-}
+// function goodbye() {
+//   document.write('Good bye ' + userName + '! We hope to see you again!')
+// }
 
-// make a counter to keep track correctly guessed answer
+// // make a counter to keep track correctly guessed answer
