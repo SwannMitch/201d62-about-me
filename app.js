@@ -90,35 +90,35 @@ function chunky(){
   alert('WRONG!');
   }
 }
-short();
-hair();
-artist();
-rageQuit();
-chunky();
-
-
-
 
 //   // Create a 6th question that ask the user to guess a number.
 //   // include too low or too high alerts
 //   // 4 chances
 
-//   do {
-//     var questionSix;
-//     questionSix = prompt('Guess my favorite number between 1 and 50');
-//     console.log('my favorite number: ' + questionSix);
-//     if (questionSix == 21) {
-//       alert('Correct!');
-//       totalCorrectQuestions++;
-//       break;
-//     } else if (questionSix < 21) {
-//       alert('Too low');
-//     } else if (questionSix > 21) {
-//       alert('Too high');
-//     } 
-//     count++;
-//   } while (count < 4);
 
+function number(){
+  do {
+    var questionSix;
+    questionSix = prompt('Guess my favorite number between 1 and 50');
+    console.log('my favorite number: ' + questionSix);
+    if (questionSix == 21) {
+      alert('Correct!');
+      totalCorrectQuestions++;
+      break;
+    } else if (questionSix < 21) {
+      alert('Too low');
+    } else if (questionSix > 21) {
+      alert('Too high');
+    } 
+    count++;
+  } while (count < 4);
+}  
+short();
+hair();
+artist();
+rageQuit();
+chunky();
+number();
 //   do {
 //     var questionSeven = ['black', 'cerulean', 'crimson', 'mauve', 'teal']
 //     var colors = prompt('Guess my favorite color.').toLowerCase();
