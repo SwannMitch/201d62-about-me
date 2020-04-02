@@ -60,21 +60,26 @@ function artist(){
   alert('WRONG!');
   }
 }
+
+
+function rageQuit(){
+  var questionFour;
+  questionFour = prompt('Do I ragequit in video games?', 'Yes or No').toLowerCase();
+  console.log('Do I ragequit in video games?: ' + questionFour);
+  if (questionFour == 'no') {
+  // console.log('Correct!');
+  alert('Correct!');
+  totalCorrectQuestions++;
+  } else {
+  // console.log('WRONG!')
+  alert('WRONG!');
+  }
+}
 short();
 hair();
 artist();
+rageQuit();
 
-//   var questionFour;
-//   questionFour = prompt('Do I ragequit in video games?', 'Yes or No').toLowerCase();
-//   console.log('Do I ragequit in video games?: ' + questionFour);
-//   if (questionFour == 'no') {
-//   // console.log('Correct!');
-//   alert('Correct!');
-//   totalCorrectQuestions++;
-//   } else {
-//   // console.log('WRONG!')
-//   alert('WRONG!');
-//   }
 
 //   var questionFive;
 //   questionFive = prompt('Is my daughter chunky?', 'Yes or No').toLowerCase();
